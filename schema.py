@@ -1,7 +1,7 @@
 from dbconnection import DBConnection
 
 
-def install(self):
+def install():
 
    dbConn = DBConnection()
    conn = dbConn.connection()
@@ -69,3 +69,5 @@ def install(self):
             VALUES (8,'22:00')")     
    conn.commit()
    conn.close()
+
+install()
